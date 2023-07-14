@@ -1,2 +1,2 @@
-const backendBase = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://backendapi-3hcg.onrender.com/';
+const backendBase = window.location.hostname === 'localhost' ? 'http://localhost:5000' : process.env.REACT_APP_Url;
 export const backend = `${backendBase}/api`;
